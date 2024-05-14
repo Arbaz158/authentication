@@ -17,10 +17,10 @@ import (
 var secretKey = []byte("secret")
 
 // Sample users data
-var users = []models.User{
-	{Username: "admin", Password: "adminpass", Type: "admin"},
-	{Username: "user", Password: "userpass", Type: "regular"},
-}
+// var users = []models.User{
+// 	{Username: "admin", Password: "adminpass", Type: "admin"},
+// 	{Username: "user", Password: "userpass", Type: "regular"},
+// }
 
 func GenerateJWT(user models.User) (string, string, error) {
 	accessToken := jwt.New(jwt.SigningMethodHS256)
